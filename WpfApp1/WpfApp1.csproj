@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Effect.fx" />
+    <None Remove="FluidMorph.fx" />
+    <None Remove="GlassEffect.fx" />
+    <None Remove="GlassEffect.ps" />
+    <None Remove="GlobalFluid.fx" />
+    <None Remove="Gooey.fx" />
+    <None Remove="GooeyEffect.fx" />
+    <None Remove="Liquid.fx" />
+    <None Remove="PXL_20210915_104801271.jpg" />
+    <None Remove="Снимок экрана 2026-06-11 180020.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="4.2.0" />
+    <PackageReference Include="WPF-UI.Abstractions" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="GlassEffect.fx" />
+    <Resource Include="GlassEffect.ps" />
+    <Resource Include="PXL_20210915_104801271.jpg" />
+    <Resource Include="Снимок экрана 2026-06-11 180020.png" />
+  </ItemGroup>
+
+</Project>
